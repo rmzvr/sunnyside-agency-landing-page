@@ -1,6 +1,6 @@
 @use 'font-face' as *;
 
-body {
+html {
     font-family: "barlow";
     font-size: var(--fs-400);
     font-weight: 600;
@@ -13,6 +13,15 @@ h1,
 h2,
 .h2 {
     font-family: "fraunces";
+    font-weight: 900;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+button {
+    line-height: 1;
 }
 
 h1,

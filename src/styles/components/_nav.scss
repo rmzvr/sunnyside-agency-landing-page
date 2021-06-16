@@ -1,0 +1,15 @@
+.nav {
+    margin-left: auto;
+}
+
+.nav__items {
+    color: var(--clr-neutral-100);
+}
+
+.nav__item {
+    display: inline-block;
+
+    margin-right: 2.61em;
+
+    cursor: pointer;
+}

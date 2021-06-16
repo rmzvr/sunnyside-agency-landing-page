@@ -1,0 +1,20 @@
+.intro {
+    height: 44.44rem;
+    text-align: center;
+
+    margin-top: -6.89em;
+
+    padding-top: calc(6.89em);
+
+    color: var(--clr-neutral-100);
+
+    background-image: url(/images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro__title {
+    text-transform: uppercase;
+    margin-top: 1.35em;
+    margin-bottom: 1.78em;
+}
