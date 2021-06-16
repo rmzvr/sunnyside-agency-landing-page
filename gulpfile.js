@@ -16,15 +16,15 @@ sass.compiler = require('sass');
 
 const html = () => {
     return gulp.src('*.html')
-        .pipe(urlPrefixer.html({
-            prefix: '',
-            tags: ['script', 'link', 'img', 'a']
-        }))
+        // .pipe(urlPrefixer.html({
+        //     prefix: '',
+        //     tags: ['script', 'link', 'img', 'a']
+        // }))
         .pipe(gulp.dest('build'))
 }
 
 const fonts = () => {
-    return gulp.src('src/fonts/*.ttf')
+    return gulp.src('src/fonts/**/*.ttf')
         .pipe(gulp.dest('build/fonts'))
 }
 
@@ -34,9 +34,9 @@ const styles = () => {
         .pipe(autoprefixer())
         .pipe(cssnano())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(urlPrefixer.css({
-            prefix: ''
-        }))
+        // .pipe(urlPrefixer.css({
+        //     prefix: ''
+        // }))
         .pipe(gulp.dest('build/styles'))
 }
 
