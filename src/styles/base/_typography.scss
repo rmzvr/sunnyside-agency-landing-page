@@ -1,0 +1,32 @@
+@use 'font-face' as *;
+
+body {
+    font-family: "barlow";
+    font-size: var(--fs-400);
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.39;
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+    font-family: "fraunces";
+}
+
+h1,
+.h1 {
+    font-size: var(--fs-900);
+    letter-spacing: 8.75px;
+}
+
+h2,
+.h2 {
+    font-size: var(--fs-800);
+}
+
+p,
+span {
+    line-height: 1.66;
+}
