@@ -1,0 +1,46 @@
+.link {
+    width: 7.61rem;
+    display: inline-block;
+
+    position: relative;
+    z-index: 1;
+
+    font-family: "fraunces";
+    font-size: var(--fs-200);
+    font-weight: 900;
+
+    line-height: 25px;
+    letter-spacing: 1px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--clr-neutral-200);
+
+    &::after {
+        content: "";
+
+        height: 0.55rem;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        z-index: -1;
+
+        border-radius: 1.55em;
+    }
+
+    &--theme--sun {
+        &::after {
+            background-color: hsla(51, 100%, 49%, 0.25);
+        }
+    }
+
+    &--theme--pig {
+        &::after {
+            background-color: hsla(7, 99%, 70%, 0.25);
+        }
+    }
+}

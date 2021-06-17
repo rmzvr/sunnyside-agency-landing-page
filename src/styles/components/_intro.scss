@@ -1,20 +1,20 @@
 .intro {
-    height: 44.44rem;
+    height: 50rem;
     text-align: center;
 
-    margin-top: -6.89em;
+    margin-top: -6.88em;
 
-    padding-top: calc(6.89em);
+    padding-top: calc(6.88em);
 
     color: var(--clr-neutral-100);
 
     background-image: url(/images/desktop/image-header.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .intro__title {
     text-transform: uppercase;
-    margin-top: 1.35em;
-    margin-bottom: 1.78em;
+    margin-top: 1.26em;
+    margin-bottom: 1.71em;
 }

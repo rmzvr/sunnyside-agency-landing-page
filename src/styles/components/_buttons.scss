@@ -1,8 +1,12 @@
 .btn {
+    position: relative;
+
+    font-family: "fraunces";
     font-size: var(--fs-200);
 
-    padding: 0.89rem 1.72rem;
-    border-radius: 1.55rem;
+    padding: 1em 2em;
+    border-radius: 1.86em;
+    line-height: 1.667;
 
     text-transform: uppercase;
     cursor: pointer;

@@ -1,11 +1,11 @@
 @use 'font-face' as *;
 
-html {
+body {
     font-family: "barlow";
-    font-size: var(--fs-400);
+    font-size: 1.125rem;
     font-weight: 600;
     font-style: normal;
-    line-height: 1.39;
+    line-height: 1.9;
 }
 
 h1,
@@ -20,7 +20,8 @@ h1,
 .h1,
 h2,
 .h2,
-button {
+h3,
+.h3 button {
     line-height: 1;
 }
 
@@ -33,6 +34,11 @@ h1,
 h2,
 .h2 {
     font-size: var(--fs-800);
+}
+
+h3,
+.h3 {
+    font-size: var(--fs-400);
 }
 
 p,
