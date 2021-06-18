@@ -80,6 +80,7 @@ pre {
    */
 
 a {
+    color: inherit;
     background-color: transparent;
 }
 
@@ -227,7 +228,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-    outline: 1px dotted ButtonText;
+    outline: none;
 }
 
 /**
@@ -408,6 +409,7 @@ a,
 a:hover,
 a:focus,
 a:active {
+    outline: none;
     text-decoration: none;
 }
 

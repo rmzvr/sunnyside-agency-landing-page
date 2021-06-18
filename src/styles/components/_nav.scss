@@ -1,15 +1,32 @@
 .nav {
-    margin-left: auto;
-}
+    &--theme--snow {
+        .nav__items {
+            color: var(--clr-neutral-100);
+        }
 
-.nav__items {
-    color: var(--clr-neutral-100);
+        .nav__item {
+            margin-right: 2.61em;
+        }
+    }
+
+    &--theme--grass {
+        .nav__items {
+            color: var(--clr-neutral-700);
+        }
+
+        .nav__item:not(:last-of-type) {
+            margin-right: 3.16em;
+        }
+    }
 }
 
 .nav__item {
     display: inline-block;
-
-    margin-right: 2.61em;
-
     cursor: pointer;
+
+    &:hover {
+        a {
+            color: var(--clr-neutral-100);
+        }
+    }
 }

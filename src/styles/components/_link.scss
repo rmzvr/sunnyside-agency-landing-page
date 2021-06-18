@@ -1,5 +1,5 @@
 .link {
-    width: 7.61rem;
+    width: 8.5625rem;
     display: inline-block;
 
     position: relative;
@@ -23,7 +23,7 @@
         height: 0.55rem;
 
         position: absolute;
-        bottom: 0;
+        bottom: 0.125rem;
         left: 0;
         right: 0;
 
@@ -34,13 +34,31 @@
 
     &--theme--sun {
         &::after {
-            background-color: hsla(51, 100%, 49%, 0.25);
+            background-color: var(--clr-primary-100-low-opacity);
+        }
+
+        &:hover {
+            &::after {
+                background-color: var(--clr-primary-200);
+            }
         }
     }
 
     &--theme--pig {
         &::after {
-            background-color: hsla(7, 99%, 70%, 0.25);
+            background-color: var(--clr-primary-200-low-opacity);
         }
+
+        &:hover {
+            &::after {
+                background-color: var(--clr-primary-100);
+            }
+        }
+    }
+}
+
+a {
+    &:focus {
+        border-bottom: 2px solid white;
     }
 }

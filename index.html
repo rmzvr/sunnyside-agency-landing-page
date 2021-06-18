@@ -10,28 +10,32 @@
 </head>
 
 <body>
+  <header class="header">
+    <a class="logo" href="#">
+      <img src="/images/logo.svg" alt="logo">
+    </a>
+    <nav class="header__nav nav nav--theme--snow">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="#">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Projects</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="btn" type="button">Contact</button>
+  </header>
   <main>
-    <header class="header">
-      <a href="#">
-        <img src="/images/logo.svg" alt="logo">
-      </a>
-      <nav class="nav">
-        <ul class="nav__items">
-          <li class="nav__item">About</li>
-          <li class="nav__item">Services</li>
-          <li class="nav__item">Projects</li>
-        </ul>
-      </nav>
-      <button class="btn" type="button">Contact</button>
-    </header>
-
     <section class="intro">
       <h1 class="intro__title">We are creatives</h1>
       <a href="#">
         <img src="/images/icon-arrow-down.svg" alt="">
       </a>
     </section>
-
     <div class="plats">
       <div class="plat plat--type--text plat--theme--default">
         <div class="wrapper">
@@ -84,7 +88,6 @@
         <img class="play__img" src="/images/desktop/image-photography.jpg" alt="orange close up on a blue background">
       </div>
     </div>
-
     <div class="container">
       <section class="testimonials">
         <h2 class="testimonials__title">Client testimonials</h2>
@@ -118,24 +121,58 @@
         </div>
       </section>
     </div>
+    <div class="gallery">
+      <img class="gallery__image" src="/images/desktop/image-gallery-milkbottles.jpg"
+        alt="bottles with milk on the background of the sky">
+      <img class="gallery__image" src="/images/desktop/image-gallery-orange.jpg"
+        alt="orange in a plate on an orange-colored table">
+      <img class="gallery__image" src="/images/desktop/image-gallery-cone.jpg" alt="waffle cone on blue background">
+      <img class="gallery__image" src="/images/desktop/image-gallery-sugarcubes.jpg"
+        alt="sugar cubes stacked in a pyramid on a pink background">
+    </div>
   </main>
-
-  About
-  Services
-  Projects
-  Contact
-  <footer>
-    <object data="/images/logo.svg" type="image/svg+xml"></object>
-    <ul>
-      <li>About</li>
-      <li>Services</li>
-      <li>Projects</li>
-    </ul>
-    <ul>
-      <li><object data="/images/icon-facebook.svg" type="image/svg+xml"></object></li>
-      <li><object data="/images/icon-instagram.svg" type="image/svg+xml"></object></li>
-      <li><object data="/images/icon-twitter.svg" type="image/svg+xml"></object></li>
-      <li><object data="/images/icon-pinterest.svg" type="image/svg+xml"></object></li>
+  <footer class="footer">
+    <a class="footer__logo logo" href="#">
+      <img src="/images/logo.svg" alt="logo">
+    </a>
+    <nav class="footer__nav nav nav--theme--grass">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="#">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">
+            Services
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#">
+            Projects
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="footer__socials">
+      <li class="footer__social">
+        <a href="#">
+          <img src="/images/icon-facebook.svg" alt="icon-facebook">
+        </a>
+      </li>
+      <li class="footer__social">
+        <a href="#">
+          <img src="/images/icon-instagram.svg" alt="icon-instagram">
+        </a>
+      </li>
+      <li class="footer__social">
+        <a href="#">
+          <img src="/images/icon-twitter.svg" alt="icon-twitter">
+        </a>
+      </li>
+      <li class="footer__social">
+        <a href="#">
+          <img src="/images/icon-pinterest.svg" alt="icon-pinterest">
+        </a>
+      </li>
     </ul>
   </footer>
 </body>
