@@ -11,8 +11,9 @@ body {
 h1,
 .h1,
 h2,
-.h2 {
-    font-family: "fraunces";
+.h2,
+.link,
+.testimonial__author {
     font-weight: 900;
 }
 
@@ -42,6 +43,43 @@ h3,
 }
 
 p,
-span {
-    line-height: 1.66;
+span,
+.btn,
+.link {
+    line-height: 1.667;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+.btn,
+.link,
+.testimonial__author {
+    font-family: "fraunces";
+}
+
+.btn,
+.link,
+.intro__title,
+.testimonials__title {
+    text-transform: uppercase;
+}
+
+.btn,
+.link {
+    font-size: var(--fs-200);
+}
+
+.link {
+    letter-spacing: 1px;
+}
+
+.testimonials__title {
+    font-size: var(--fs-500);
+    letter-spacing: 5px;
+}
+
+.testimonial__position {
+    font-size: var(--fs-100);
 }

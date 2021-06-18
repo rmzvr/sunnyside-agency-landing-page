@@ -430,3 +430,8 @@ input:active,
 input:focus {
     outline: none;
 }
+
+button,
+a {
+    cursor: pointer;
+}

@@ -1,10 +1,6 @@
-.plats {
-    display: flex;
-    flex-wrap: wrap;
-}
+@use 'abstracts' as *;
 
 .plat {
-    width: 45rem;
     height: 37.5rem;
 
     position: relative;
@@ -13,11 +9,20 @@
     flex-direction: column;
     align-items: center;
 
+    @include mq(medium) {
+        height: 25em;
+    }
+
+    // PLAT TYPES ================>
     &--type--text {
         justify-content: center;
 
         .wrapper {
             max-width: 45ch;
+
+            @include mq(medium) {
+                max-width: 31ch;
+            }
         }
 
         .plat__title {
@@ -47,7 +52,7 @@
             margin-bottom: 3.75em;
         }
 
-        .play__img {
+        .plat__img {
             position: absolute;
             top: 0;
             left: 0;
@@ -55,7 +60,9 @@
             z-index: -1;
         }
     }
+    // END PLAT TYPES =============>
 
+    // PLAT THEMES ================>
     &--theme--default {
         .plat__title {
             color: var(--clr-neutral-200);
@@ -85,6 +92,7 @@
             color: var(--clr-primary-400);
         }
     }
+    // END PLAT THEMES =============>
 }
 
 .plat__img {

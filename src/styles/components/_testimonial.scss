@@ -1,0 +1,36 @@
+@use 'abstracts' as *;
+
+.testimonial {
+    max-width: 48ch;
+
+    text-align: center;
+}
+
+.testimonial__avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin-bottom: 3.22em;
+
+    @include mq(tablet) {
+        margin-bottom: 1.8em;
+    }
+}
+
+.testimonial__text {
+    color: var(--clr-neutral-300);
+    margin-bottom: 3.83em;
+
+    @include mq(tablet) {
+        margin-bottom: 2em;
+    }
+}
+
+.testimonial__author {
+    color: var(--clr-neutral-200);
+    margin-bottom: 0.5em;
+}
+
+.testimonial__position {
+    color: var(--clr-neutral-500);
+}
