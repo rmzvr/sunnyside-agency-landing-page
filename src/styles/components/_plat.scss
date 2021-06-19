@@ -1,7 +1,7 @@
 @use 'abstracts' as *;
 
 .plat {
-    height: 37.5rem;
+    min-height: 37.5rem;
 
     position: relative;
 
@@ -10,18 +10,39 @@
     align-items: center;
 
     @include mq(medium) {
-        height: 25em;
+        min-height: 25em;
+    }
+
+    @include mq(small) {
+        min-height: 19.5rem;
+        text-align: center;
+
+        &:nth-of-type(2) {
+            order: -1;
+        }
+
+        &:nth-of-type(1) {
+            order: 0;
+        }
     }
 
     // PLAT TYPES ================>
     &--type--text {
         justify-content: center;
 
+        @include mq(small) {
+            padding: 3.55em 1.33em;
+        }
+
         .wrapper {
             max-width: 45ch;
 
             @include mq(medium) {
                 max-width: 31ch;
+            }
+
+            @include mq(small) {
+                max-width: 32ch;
             }
         }
 
@@ -37,6 +58,10 @@
     &--type--both {
         justify-content: end;
         text-align: center;
+
+        @include mq(small) {
+            min-height: 37.5rem;
+        }
 
         .wrapper {
             max-width: 34ch;

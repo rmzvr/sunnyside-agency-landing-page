@@ -21,6 +21,15 @@
     }
 }
 
+.nav,
+.nav__items {
+    display: flex;
+}
+
+.nav__items {
+    align-items: center;
+}
+
 .nav__item {
     display: inline-block;
 

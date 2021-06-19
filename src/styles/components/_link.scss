@@ -24,26 +24,26 @@
         border-radius: 1.55em;
     }
 
-    &--theme--sun {
+    &--theme--pig {
         &::after {
             background-color: var(--clr-primary-100-low-opacity);
         }
 
         &:hover {
             &::after {
-                background-color: var(--clr-primary-200);
+                background-color: var(--clr-primary-100);
             }
         }
     }
 
-    &--theme--pig {
+    &--theme--sun {
         &::after {
             background-color: var(--clr-primary-200-low-opacity);
         }
 
         &:hover {
             &::after {
-                background-color: var(--clr-primary-100);
+                background-color: var(--clr-primary-200);
             }
         }
     }

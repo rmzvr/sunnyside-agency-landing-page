@@ -1,3 +1,5 @@
+@use 'abstracts' as *;
+
 .header {
     position: relative;
     z-index: 10;
@@ -6,8 +8,16 @@
     align-items: center;
 
     padding: 1.89em 2.44em;
+
+    @include mq(small) {
+        padding: 1.77em 1.33em;
+    }
 }
 
 .header__nav {
     margin-left: auto;
+
+    @include mq(small) {
+        display: none;
+    }
 }

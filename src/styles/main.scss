@@ -22,6 +22,10 @@
     @include mq(medium) {
         height: 37em;
     }
+
+    @include mq(small) {
+        height: 33.625rem;
+    }
 }
 
 .intro__title {
@@ -33,6 +37,10 @@
 .plats {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    @include mq(small) {
+        grid-template-columns: 1fr;
+    }
 }
 
 // TESTIMONIALS SECTION ===================================>
@@ -48,6 +56,10 @@
         @include mq(tablet) {
             grid-template-columns: 1fr;
             justify-items: center;
+        }
+
+        @include mq(small) {
+            gap: 3.55em;
         }
     }
 
@@ -85,5 +97,9 @@
     @include mq(tablet) {
         min-height: auto;
         height: 25rem;
+    }
+
+    @include mq(small) {
+        height: 11.75rem;
     }
 }
