@@ -16,10 +16,10 @@ sass.compiler = require('sass');
 
 const html = () => {
     return gulp.src('*.html')
-        // .pipe(urlPrefixer.html({
-        //     prefix: '',
-        //     tags: ['script', 'link', 'img', 'a']
-        // }))
+        .pipe(urlPrefixer.html({
+            prefix: '/sunnyside-agency-landing-page',
+            tags: ['script', 'link', 'img', 'a']
+        }))
         .pipe(gulp.dest('build'))
 }
 
@@ -34,9 +34,9 @@ const styles = () => {
         .pipe(autoprefixer())
         .pipe(cssnano())
         .pipe(rename({ suffix: '.min' }))
-        // .pipe(urlPrefixer.css({
-        //     prefix: ''
-        // }))
+        .pipe(urlPrefixer.css({
+            prefix: '/sunnyside-agency-landing-page'
+        }))
         .pipe(gulp.dest('build/styles'))
 }
 

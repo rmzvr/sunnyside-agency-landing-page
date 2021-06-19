@@ -1,6 +1,4 @@
 .btn {
-    position: relative;
-
     padding: 1em 2em;
     border-radius: 1.86em;
 
@@ -8,13 +6,10 @@
 
     transition: 0.1s ease-in-out;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: var(--clr-neutral-100);
         background-color: var(--clr-neutral-100-low-opacity);
-    }
-
-    &:focus {
-        box-shadow: 2px 2px 1px 1px var(--clr-neutral-400);
     }
 
     &--theme--snow {

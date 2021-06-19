@@ -3,6 +3,10 @@
 @use 'utilities/container' as *;
 @use 'components' as *;
 
+html {
+    scroll-behavior: smooth;
+}
+
 // INTRO SECTION ==========================================>
 .intro {
     height: 50rem;
@@ -35,12 +39,21 @@
 
 // PLATS SECTION ==========================================>
 .plats {
+    position: relative;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
     @include mq(small) {
         grid-template-columns: 1fr;
     }
+}
+
+.plats__arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: 0;
 }
 
 // TESTIMONIALS SECTION ===================================>
