@@ -1,0 +1,118 @@
+@use 'abstracts' as *;
+@use 'base' as *;
+@use 'utilities/container' as *;
+@use 'components' as *;
+
+html {
+    scroll-behavior: smooth;
+}
+
+// INTRO SECTION ==========================================>
+.intro {
+    height: 50rem;
+    text-align: center;
+
+    margin-top: -6.88em;
+
+    padding-top: calc(6.88em);
+
+    color: var(--clr-neutral-100);
+
+    background-image: url(/sunnyside-agency-landing-page/images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+    @include mq(medium) {
+        height: 37em;
+    }
+
+    @include mq(small) {
+        height: 33.625rem;
+    }
+}
+
+.intro__title {
+    margin-top: 1.26em;
+    margin-bottom: 1.71em;
+}
+
+// PLATS SECTION ==========================================>
+.plats {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include mq(small) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.plats__arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: 0;
+}
+
+// TESTIMONIALS SECTION ===================================>
+.testimonials {
+    margin-top: 8.88em;
+    margin-bottom: 8.88em;
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.66em;
+
+        @include mq(tablet) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+
+        @include mq(small) {
+            gap: 3.55em;
+        }
+    }
+
+    @include mq(medium) {
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+}
+
+.testimonials__title {
+    text-align: center;
+    color: var(--clr-neutral-500);
+    margin-bottom: 4em;
+}
+
+// GALLERY SECTION ========================================>
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include mq(tablet) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.gallery__image {
+    min-height: 27.9375rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @include mq(tablet) {
+        min-height: auto;
+        height: 25rem;
+    }
+
+    @include mq(small) {
+        height: 11.75rem;
+    }
+}
