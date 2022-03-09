@@ -47,7 +47,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-gulp-sass-bem-html-grid-flexbox-a5lzGMSAr)
-- Live Site URL: [Github Pages](https://rzvr.github.io/sunnyside-agency-landing-page/)
+- Live Site URL: [Github Pages](https://rmzvr.github.io/sunnyside-agency-landing-page/)
 
 ## My process
 
@@ -70,7 +70,7 @@ In this challenge, I studied and updated my knowledge of the project structure, 
 
 ## Author
 
-- Github - [rzvr](https://github.com/rzvr)
-- Codewars - [rzvr](https://www.codewars.com/users/rzvr)
-- LinkedIn - [Roman Zvir](https://www.linkedin.com/in/roman-zvir-8a4394214)
-- Frontend Mentor - [rzvr](https://www.frontendmentor.io/profile/rzvr)
+- [Github](https://github.com/rmzvr)
+- [LinkedIn](https://www.linkedin.com/in/rmzvr)
+- [Codewars](https://www.codewars.com/users/rmzvr)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/rmzvr)
